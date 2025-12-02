@@ -1,0 +1,6 @@
+@main
+def string():Unit ={
+    val cat = "fluffy"
+    println(s"My cat's name is $cat")
+    print(s"the sum of 1+1 is ${1+1}")
+}
