@@ -1,0 +1,8 @@
+import scala.io.StdIn
+
+@main
+def userInput(): Unit = {
+    println("Type a number and we will give you double of it")
+    var input = StdIn.readLine().toInt
+    print(s"doubled ${input*2}")
+}
