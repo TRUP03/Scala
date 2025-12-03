@@ -1,0 +1,10 @@
+import scala.io.StdIn
+@main
+def math():Unit = {
+    print("Write your bank balance :")
+    var input = StdIn.readLine().toInt
+    var interest = input * 0.055f * 5
+    var total = input + interest
+    
+    print(s"After 5 years user will have : $$$total")
+}
