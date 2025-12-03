@@ -1,0 +1,19 @@
+import scala.io.StdIn
+
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+  	  var input1 = StdIn.readLine()
+      try{
+        var input = input1.toInt
+        println(s"$input * 3 = ${input*3}")
+      }
+      catch{
+        case e: Exception =>{
+          println("Exception")
+        }
+      }
+      finally{
+        print("resources has been freed")
+      }
+	}
+}
