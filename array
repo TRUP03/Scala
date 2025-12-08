@@ -1,0 +1,8 @@
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+	  val a =List(1,2,"angle") //immutable
+	  val b = Array(3,4,"tree") //mutable
+	  println(a)
+	  println(b.toList)
+	}
+}
