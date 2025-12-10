@@ -1,0 +1,44 @@
+object Geeks{
+  def main(args:Array[String]){
+    val mp = Map[Int, Int](1->2, 2->3, 4->5)
+    val mp2 = Map[Int,Int]((1,2),(2,3),(4,5))
+    println(mp)
+    println(mp2)
+    println(mp2(1))
+    println(mp.keySet)
+    println(mp.values
+    )
+  }
+}
+
+//map is immutable hnce hashmap has been created
+import scala.collection.mutable.HashMap
+//mutable and size flexible
+
+import scala.collection.mutable.HashMap
+object Geeks{
+  def main(args:Array[String]){
+    val count = HashMap(1->"un", 2->"duo", 3->"trios")
+    println(count)
+    println(count(2))
+    println(count(3))
+    count+=4->"quratre"
+    println(count)
+
+
+
+
+
+  import scala.collection.mutable.HashMap
+object Geeks{
+  def main(args:Array[String]){
+    val attendance = HashMap("23/09" -> 3726, "24/09" -> 4735, "25/09" -> 2836)
+    attendance.addOne(("26/09" -> 3452))
+    println(attendance)
+    println(s"people attended on 24 and 25 are ${attendance("24/09")+attendance("25/09")}")
+    
+  }
+}
+    
+  }
+}
