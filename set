@@ -1,0 +1,15 @@
+import scala.collection.mutable.HashSet
+object Geeks{
+  def main(args:Array[String]){
+    val acceptedColors = HashSet("white", "black", "gray")  
+    val myColors = Set("blue", "red", "black", "green")
+    
+    val canWear = acceptedColors.intersect(myColors)
+    println(canWear)
+    
+    acceptedColors.add("red")
+    
+      val canWear1 = acceptedColors.intersect(myColors)
+    println(canWear1)
+  }
+}
