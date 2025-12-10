@@ -13,3 +13,15 @@ object Geeks{
     println(animals)
   }
 }
+
+
+import scala.collection.mutable.ArrayBuffer
+object Geeks{
+  def main(args:Array[String]){
+    val animals = ArrayBuffer("Dog", "Cat", "Cow", "Sheep")
+    println(animals)
+    val deadAnimals = ArrayBuffer("Cow","Sheep")
+    animals--=deadAnimals
+    println(animals)
+  }
+}
