@@ -1,0 +1,15 @@
+import scala.collection.mutable.ArrayBuffer
+object Geeks{
+  def main(args:Array[String]){
+    val animals = ArrayBuffer("Dog", "Cat", "Cow", "Sheep")
+    println(animals.length)
+    println(animals(1))
+    animals.addOne("elephant")
+    animals.addOne("Kitten")
+    animals.remove(0)
+    var ind = animals.indexOf("Cow")
+    println(s"the index of cow is $ind")
+    println(animals.length)
+    println(animals)
+  }
+}
