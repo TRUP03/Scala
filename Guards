@@ -1,0 +1,36 @@
+import scala.io.StdIn
+object Geeks{
+  def main(args:Array[String]){
+    
+    val weekDay = "monday"
+    val itIsAm = true
+    
+    val action = 
+    weekDay match{
+      case "Saturday" if itIsAm  => "Go to gym"
+      case "Sunday" if itIsAm => "Sleep"
+      case "Saturday" | "Sunday" if !itIsAm => "Go out have fun"
+      case _ =>"Go to work"
+    }
+    
+    print(action)
+    
+    
+  }
+}
+
+import scala.io.StdIn
+import scala.util.Random
+object Geeks{
+  def main(args:Array[String]){
+    
+   val num = Random.nextInt(20)
+   
+   num match{
+     case x if 0 to 10 contains num => println(s"between 1 to 10 : $x")
+     case y if 11 to 20 contains num => println(s"double digit $y")
+   }
+    
+    
+  }
+}
