@@ -1,0 +1,19 @@
+import scala.io.StdIn
+object Geeks{
+  def main(args:Array[String]){
+    
+    println("Type a animal name : ")
+    var input = StdIn.readLine()
+    var action = ""
+    
+    input match {
+      case "dog" => action="Pet it"
+      case "cat" => action = "feed it"
+      case "crocodile" => action = "run away"
+      case _ => action ="google it"
+    }
+    println(action)
+    
+    
+  }
+}
