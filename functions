@@ -1,0 +1,38 @@
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    val nameYear = Map("Riya"->2020, "Siya" -> 2002, "Danny" -> 2002)
+    nameBirthYear(nameYear)
+	}
+	def nameBirthYear(nameYear : Map[String,Int]):Unit = {
+	  val n = nameYear.size
+	  for((name,year)<-nameYear)
+	 // val name = nameYear
+	  println(s"My name is $name and the year of birth is $year")
+	}
+}
+
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    for(i<-1 to 10)
+    hello()
+	}
+	def hello(): Unit={
+	  println("Hello")
+	}
+}
+
+import scala.io.StdIn
+import scala.collection.immutable.Range
+
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    for(i<-1 to 2)
+    nameBirthYear()
+	}
+	def nameBirthYear():Unit = {
+	  val name = StdIn.readLine()
+	  val year = StdIn.readLine().toInt
+	  
+	  println(s"My name is $name and the year of birth is $year")
+	}
+}
