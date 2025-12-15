@@ -8,3 +8,18 @@ object HelloWorld {
     }
 	}
 }
+
+
+import scala.io.StdIn
+import scala.collection.immutable.Range
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    var num = StdIn.readLine().toInt
+    for(i<-1 to num){
+      for(j<-i to 1 by -1){
+        print("\uD83D\uDE00")
+      }
+      println()
+    }
+	}
+}
