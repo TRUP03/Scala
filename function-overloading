@@ -1,0 +1,20 @@
+//function overloading
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    val animalStr = "Dog"
+    val animals = List("Cat","Elephant","Cow")
+    animal(animalStr)
+    animal(animals)
+	}
+	
+	def animal(ani:String) : Unit = {
+	  println(s"Hi $ani")
+	}
+	
+	def animal(ani:Iterable[String]):Unit = {
+	 // val n = ani.size
+	  for(i<- ani)
+	  println(s"Hello $i")
+	}
+
+}
