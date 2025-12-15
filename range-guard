@@ -1,0 +1,10 @@
+import scala.io.StdIn
+import scala.collection.immutable.Range
+object HelloWorld {
+	def main(args: Array[String]): Unit = {
+    var tillWhere = StdIn.readLine().toInt
+    for(i<-1 until 12 by 2 if i%3==0){
+      println(i)
+    }
+	}
+}
